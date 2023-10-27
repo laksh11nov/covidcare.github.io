@@ -1,0 +1,19 @@
+@media only screen and (max-width: 576px) {
+  .home_content h2 {
+    font-size: 40px;
+  }
+
+  .home_content {
+    text-align: center;
+  }
+
+  .home_content .home_content_text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .covid_details_box .case_growth{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {}
