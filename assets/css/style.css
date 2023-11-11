@@ -20,7 +20,9 @@ html {
   --bgcolor: #44b564;
   --color: #ffffff;
 }
-
+.active {
+  color: var(--bgcolor)!important;
+}
 
 .home_section {
   width: 100%;
@@ -64,10 +66,27 @@ html {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.18px;
+  transition: color .6s ease-in-out;
+  position: relative;
 }
-  
+.nav-link:hover {
+  color: #44B564;
+}
+/*testing hover*/
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #44B564;
+  transition: all ease 1s;
+}
 
-
+.nav-link:hover::after {
+  width: 100%;
+}
 .formInputs {
   border-radius: 12px;
   opacity: 0.8;
